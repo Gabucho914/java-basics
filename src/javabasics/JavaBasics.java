@@ -178,10 +178,96 @@ public class JavaBasics {  // Note that "JavaBasics matches the name of this fil
 
         // When we assign a value to a newly declared variable, we call this _initializing_ the
         // variable.
+        //
+        // You can declare and initialize multiple variables of the same type all at once:
+
+        int hundred = 100, thousand = 1000;
+
+        // TODO: list primitive types here? or not?
 
         System.out.println("–––––– Conditionals ––––––");
 
-        // TODO
-        // (with a little discussion of braces, whitespace, formatting)
+        // In whatever language you learned previously, there will be some kind of _conditionals_:
+        // `if` statements or an equivalent. Here is the Java syntax for an `if` statement:
+
+        if (hundred + thousand < 100000) {
+            System.out.println("Arithmetic is working!");
+        }
+
+        // They can have an `else` clause:
+
+        if (hundred + thousand < 100000) {
+            System.out.println("Arithmetic is still working!");
+        } else {
+            System.out.println("Arithmetic appears to be broken. ?!?");
+        }
+
+        // It possible to create an if-else-if chain:
+
+        if (thousand < 99) {
+            System.out.println("A thousand is teeny.");
+        } else if (thousand < 999) {
+            System.out.println("A thousand is not that big of a number.");
+            System.out.println("Other numbers are way bigger.");
+        } else if (thousand < 9999) {
+            System.out.println("A thousand is a pretty big number,");
+            System.out.println("at least if you ask me.");
+        } else {
+            System.out.println("A thousand is super duper huge!");
+        }
+
+        // Notice how the curly braces { } enclose chunks of code in Java. Java uses those braces --
+        // and _only_ those braces -- to determine whether multiple lines are grouped together in
+        // a block.
+        //
+        // Unlike Python, Java does not pay any attention to how you indent your code. Java mostly
+        // ignores whitespace. (The term “whitespace” refers to spaces, tabs, carriage returns (the
+        // ends of lines), and any other characters that show up as empty space.)
+        //
+        // Technically, this is completely legal Java (Try it! It runs!):
+
+          if(                   hundred+thousand>-
+        1000000
+                                ){         System
+
+                 .
+                out
+                 .
+        
+
+
+                                                                      println
+(                              "Who cares about code formatting??"    )
+;}
+        
+
+        // However, that code is _terrible_. Java may not care, but no _human_ wants to read that!!
+        // Java’s flexibility means that _you_ are responsible for formatting your code well.
+        //
+        // It also means you have a choice. There are many different styles of code formatting.
+        // Here is a sampling, if you’re curious:
+        //
+        //    https://en.wikipedia.org/wiki/Indentation_style#Notable_styles
+        //
+        // Programmers sometimes get Big Feelings about these styles. You are welcome to develop
+        // feelings, too, but the one golden rule for which style to use is always the same:
+        //
+        //     Be consistent.
+        //
+        // If the project you’re working on already has a formatting style, stick with it! (That
+        // applies even if it’s not your personal favorite.) If you are starting a new project, get
+        // consensus about style on your team.
+        //
+        // In COMP 127, we use the style present in this document (the earlier part, not the final
+        // terrible example).
+        
+        // A puzzle for you to mull over: What does will this code print? Guess first, then
+        // uncomment it and try it! What is the result? Why??
+
+        /*
+        if (1 > 2)
+            System.out.println("Roses are red, violets are blue");
+            System.out.println("If you ask me, one is greater than two");
+        */
     }
 }
