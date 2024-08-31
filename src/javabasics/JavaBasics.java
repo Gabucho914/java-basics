@@ -11,7 +11,7 @@ unfamiliar language.
 If you _do_ already know some Java: Be on the lookout for vocabulary, concepts, and details you may
 have missed along the way. This reading is still for you.
 
-––––––––––––––––––––––––––––––––––––––––––––––––
+────────────────────────────────────────────────
 
 In addition to being a reading, this file is also code. You can run it! To run this code:
 
@@ -21,7 +21,7 @@ In addition to being a reading, this file is also code. You can run it! To run t
 
 Where did that output come from? Read on.
 
-––––––––––––––––––––––––––––––––––––––––––––––––
+────────────────────────────────────────────────
 
 Note that even though this file is code, Java will ignore these English instructions. Why?
 Because they are inside a comment. Java has two different ways to write comments:
@@ -54,7 +54,7 @@ the _semantic_ differences that come to the forefront. What tools does this lang
 its building blocks? What kind of mistakes does it help prevent, or make more likely? How does this
 language encourage you to _think_?
 
-––––––––––––––––––––––––––––––––––––––––––––––––
+────────────────────────────────────────────────
 
 Java is a language that encourages you to think about details. It is not concise; it loves to make
 you to have to spell everything out. That can be a source of frustration for developers, but its
@@ -70,7 +70,7 @@ Not so in Java.
 In Java, there is a long series of hoops we have to jump through to get to the point where we can
 print a string. We have to:
 
-- include a “package declaration” that names the folder this file is supposed to be in side, then
+- include a “package declaration” that names the folder this file is supposed to be inside, then
 - include a “class declaration” that creates a container in which code can live, then
 - “declare a main method” that says where the program should start.
 
@@ -118,7 +118,7 @@ public class JavaBasics {  // Note that "JavaBasics” matches the name of this 
         // running this code now, then add the semicolon back so that you can continue on!)
 
         
-        System.out.println("–––––– Expressions and Arithmetic ––––––");
+        System.out.println("────── Expressions and Arithmetic ──────");
 
         // Java’s syntax for _arithmetic expressions_ will probably feel more familiar to you:
 
@@ -149,7 +149,7 @@ public class JavaBasics {  // Note that "JavaBasics” matches the name of this 
         // mathematically exact answers**.
 
         
-        System.out.println("–––––– Variables ––––––");
+        System.out.println("────── Variables ──────");
 
         // Like almost all programming languages, Java has variables. If you are used to Python,
         // you are used to creating a variable and setting its value like this:
@@ -192,7 +192,7 @@ public class JavaBasics {  // Note that "JavaBasics” matches the name of this 
         int hundred = 100, thousand = 1000;
 
         
-        System.out.println("–––––– Conditionals ––––––");
+        System.out.println("────── Conditionals ──────");
 
         // In whatever language you learned previously, there will be some kind of _conditionals_:
         // `if` statements or an equivalent. Here is the Java syntax for an `if` statement:
@@ -223,6 +223,8 @@ public class JavaBasics {  // Note that "JavaBasics” matches the name of this 
             System.out.println("A thousand is super duper huge!");
         }
 
+        System.out.println("────── Code Formatting ──────");
+
         // Notice how the curly braces { } enclose chunks of code in Java. Java uses those braces --
         // and _only_ those braces -- to determine whether multiple lines are grouped together in
         // a block.
@@ -247,7 +249,6 @@ public class JavaBasics {  // Note that "JavaBasics” matches the name of this 
 (                              "Who cares about code formatting??"    )
 ;}
         
-
         // However, that code is _terrible_. Java may not care, but no _human_ wants to read that!!
         // Java’s flexibility means that _you_ are responsible for formatting your code well.
         //
@@ -268,7 +269,7 @@ public class JavaBasics {  // Note that "JavaBasics” matches the name of this 
         // In COMP 127, we use the style present in this document (the earlier parts, not the final
         // terrible example).
 
-        // ––––––––––––––––––––––––––––––––––––––––––––––––
+        System.out.println("────── A Puzzle ──────");
         
         // To end the reading, here’s a little puzzle for you to mull over.
         //
