@@ -135,9 +135,10 @@ public class JavaBasics {  // Note that "JavaBasics matches the name of this fil
         // Note the “approximate” part!
         //
         // Floating point is only suitable when it is OK to use _approximate_ values, because it can
-        // introduce surprising rounding errors. For example, what do you think this line _should_
+        // introduce surprising rounding errors. For example, what do you think this code _should_
         // print? What _does_ it print?
 
+        System.out.println("Floating point math can be surprising:");
         System.out.println((1.0 / 49.0) * 49.0);
 
         // WHY??!? Take COMP 240, and you’ll find out!
