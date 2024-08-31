@@ -27,8 +27,8 @@ Note that even though this file is code, Java will ignore these English instruct
 Because they are inside a comment. Java has two different ways to write comments:
 
 The first way is the slash-asterisk syntax. This comment you are reading right now started with the
-slash-asterisk sequence at the top of this file. It can continue across many lines. It extends until
-the next asterisk-slash, like this:
+slash-asterisk sequence at the top of this file. The comment can continue across many lines. It
+extends until the next asterisk-slash, like this:
 */
 
 // This is also a comment. It starts with the double slash, and extends only to the end of the line.
@@ -37,17 +37,17 @@ the next asterisk-slash, like this:
 /*
 Whatever programming language(s) you already know doubtless also have some way to write comments,
 but it might not look the same. In Python, for example, the # character denotes a comment. Not so
-in Java! This is a difference in _syntax_, an important term to know.
+in Java! This is a difference in _syntax_:
 
-    SYNTAX refers to the rules for expressing code as text (or whatever fixed form it has; there are
-    graphical programming languages out there).
+    SYNTAX refers to the rules for expressing code in some fixed form (usually text).
 
     SEMANTICS is what code _means_ in a given language, the rules for what each building block of
     the language _does_ when the program runs.
 
 When you are learning a new programming language, or when you are learning to program for the first
-time, syntax will consume a lot of your attention at first. Syntax can be overwhelming. Syntactic
-differences can be overwhelming when you learn your _second_ language.
+time, syntax will consume a lot of your attention at first. Syntax can be overwhelming. Even if you
+are an experienced programmer, syntactic differences can be overwhelming when you learn a new
+and different language.
 
 Hang in there! As you gain experience in a language, syntax becomes easier and easier, and it is
 the _semantic_ differences that come to the forefront. What tools does this language offer? What are
@@ -74,14 +74,15 @@ print a string. We have to:
 - include a “class declaration” that creates a container in which code can live, then
 - “declare a main method” that says where the program should start.
 
-Package? Class? Declaration? Method?? That’s a lot!
+Package? Class? Declaration? Method? Huh?? That’s a lot!
 
-Why?? Why is Java so complicated?? The short answer to that question is that Java is designed to
-help you write _large_ programs, not small ones, and is concerned with providing and encouraging you
-to use structures that help keep large programs manageable.
+Why?? Why is Java so complicated?? The short answer is that Java is designed to help you write
+_large_ programs, not small ones, and is concerned with providing and encouraging you to use
+structures that can help keep large programs manageable.
 
-Over the coming weeks, you will learn about every one of these structures that the language offers.
-But for now, you can treat all of this as a magic incantation that you use to write Java code.
+Over the coming weeks, you will learn about every one of these structures this reading just
+mentioned. But for now, you can treat all of these hoops you have to jump through as a magic
+incantation that you use to write Java code.
 
 Ready? Here we go!
 */
@@ -90,7 +91,7 @@ Ready? Here we go!
 
 package javabasics;  // Note that “javabasics” matches the name of the directory containing this file
 
-public class JavaBasics {  // Note that "JavaBasics matches the name of this file"
+public class JavaBasics {  // Note that "JavaBasics” matches the name of this file
     // If you are looking at this file in Visual Studio Code, it may show “Run | Debug” on the next
     // line. That is VS Code’s user interface, _not_ part of the code! You do not have to type it.
     public static void main(String[] args) {  // This long line means “when running, start here”
@@ -100,7 +101,7 @@ public class JavaBasics {  // Note that "JavaBasics matches the name of this fil
 
         System.out.println("Hello there!");
 
-        // Java makes even this common task verbose! Good news, in Visual Studio Code, you can
+        // Java makes even this common task verbose! Good news: in Visual Studio Code, you can
         // type `sout` and then press the tab key, and it will write out System.out.println();
         // for you.
         
@@ -116,6 +117,7 @@ public class JavaBasics {  // Note that "JavaBasics matches the name of this fil
         // Note that Java won’t even run _any_ of your code if there is a syntax error. (If you are
         // running this code now, then add the semicolon back so that you can continue on!)
 
+        
         System.out.println("–––––– Expressions and Arithmetic ––––––");
 
         // Java’s syntax for _arithmetic expressions_ will probably feel more familiar to you:
@@ -143,19 +145,21 @@ public class JavaBasics {  // Note that "JavaBasics matches the name of this fil
 
         // WHY??!? Take COMP 240, and you’ll find out!
         //
-        // For now, just heed the warning: **floating point numbers are approximations**.
+        // For now, just heed the warning: **floating point numbers do not always give
+        // mathematically exact answers**.
 
+        
         System.out.println("–––––– Variables ––––––");
 
-        // Like almost all languages, Java has variables. If you are used to Python, you are used
-        // to creating a variable and setting its value like this:
+        // Like almost all programming languages, Java has variables. If you are used to Python,
+        // you are used to creating a variable and setting its value like this:
         
         //mascot = "Coo"
 
         // Not so in Java. Try uncommenting that line above, and see what happens.
         //
-        // Ah, but Java needs each statement to end in a semicolon. Try adding a semicolon to the
-        // end of the line, and _now_ see what happens.
+        // Ah, but Java needs each statement to end in a semicolon! Try adding a semicolon to the
+        // end of the line, and _now_ see what happens. (_Read_ the error message!)
         // 
         // Still broken! Comment out that line again. This isn’t going to work.
 
@@ -187,8 +191,7 @@ public class JavaBasics {  // Note that "JavaBasics matches the name of this fil
 
         int hundred = 100, thousand = 1000;
 
-        // TODO: list primitive types here? or not?
-
+        
         System.out.println("–––––– Conditionals ––––––");
 
         // In whatever language you learned previously, there will be some kind of _conditionals_:
@@ -228,7 +231,7 @@ public class JavaBasics {  // Note that "JavaBasics matches the name of this fil
         // ignores whitespace. (The term “whitespace” refers to spaces, tabs, carriage returns (the
         // ends of lines), and any other characters that show up as empty space.)
         //
-        // Technically, this is completely legal Java. (Try it! It runs!)
+        // Technically, the following is completely legal Java. (Try it! It runs!)
 
           if(                   hundred+thousand>-
         1000000
