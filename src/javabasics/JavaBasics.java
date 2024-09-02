@@ -13,13 +13,10 @@ have missed along the way. This reading is still for you.
 
 ────────────────────────────────────────────────
 
-In addition to being a reading, this file is also code. You can run it! To run this code:
+In addition to being a reading, this file is also code. You can run it! You can change it! You can
+experiment with it! Please follow these instructions:
 
-- Follow the instructions on Moodle to clone this reading assignment on your computer and open it
-  as a project in VS Code.
-- Open the file src/javabasics/JavaBasics.java, so that you are reading this text right here inside
-  of VS Code.
-- Click the Run icon (looks like a play button) in the upper right of the VS Code window.
+    https://docs.google.com/document/d/1ihULLCsFm59TgIML0BBOERLI899MKRqDcr-NBOIRZGs/edit
 
 When you run it, you will see the program’s output, beginnig with the message “Hello there!”.
 Where did that output come from? What is it demonstrating? Read on.
