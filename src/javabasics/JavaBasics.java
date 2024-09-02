@@ -15,11 +15,14 @@ have missed along the way. This reading is still for you.
 
 In addition to being a reading, this file is also code. You can run it! To run this code:
 
-•••••••••••••••••••••••••••••••••••••••••••••••••••••••••
-<<insert quick instructions here for running in VS CODE>>
-•••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+- Follow the instructions on Moodle to clone this reading assignment on your computer and open it
+  as a project in VS Code.
+- Open the file src/javabasics/JavaBasics.java, so that you are reading this text right here inside
+  of VS Code.
+- Click the Run icon (looks like a play button) in the upper right of the VS Code window.
 
-Where did that output come from? Read on.
+When you run it, you will see the program’s output, beginnig with the message “Hello there!”.
+Where did that output come from? What is it demonstrating? Read on.
 
 ────────────────────────────────────────────────
 
