@@ -31,8 +31,10 @@ slash-asterisk sequence at the top of this file. The comment can continue across
 extends until the next asterisk-slash, like this:
 */
 
+
 // This is also a comment. It starts with the double slash, and extends only to the end of the line.
 // To keep this comment going on another line, we need another double slash.
+
 
 /*
 Whatever programming language(s) you already know doubtless also have some way to write comments,
